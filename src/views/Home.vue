@@ -15,8 +15,9 @@ export default {
     HelloWorld
   },
   methods: {
-    test () {
-      console.log(api.login(), 'login');
+    async test () {
+      let res = await api.getOcrResult()
+      console.log(res, 'login');
     }
   }
 }

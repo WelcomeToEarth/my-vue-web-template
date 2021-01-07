@@ -1,4 +1,4 @@
-const hot = { target: 'https://hotspot.xinhua-news.cn' };
+const mock = { target: 'http://mock-api.com/oKmAOAKX.mock' };
 module.exports = {
   publicPath: './',
   devServer: {
@@ -6,7 +6,7 @@ module.exports = {
     port: 8080,
     host: '0.0.0.0',
     proxy: {
-      '/api/v1': hot,
+      '/': mock,
     },
   },
   css: {
