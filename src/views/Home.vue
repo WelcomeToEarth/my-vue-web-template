@@ -1,24 +1,37 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <el-button @click="test">apitest</el-button>
+    <Header />
+    <Section class="section-wrap"/>
+    <Foot class="foot"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import api from '@/service/api'
+import Foot from '@/layout/Foot';
+import Header from '@/layout/Header';
+import Section from '@/layout/Section';
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Foot,
+    Header,
+    Section
   },
   methods: {
-    async test () {
-      let res = await api.getOcrResult()
-      console.log(res, 'login');
-    }
+    
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  position: relative;
+  height: 100vh;
+  > .section-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.foot { position: absolute; bottom: 0;}
+</style>
