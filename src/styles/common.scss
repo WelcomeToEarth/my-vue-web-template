@@ -1,0 +1,34 @@
+@import '~@/styles/theme.scss';
+body, div, span,
+header, footer, nav, section, aside, article,
+ul, dl, dt, dd, li,
+h1, h2, h3, h4, h5, h6,
+a, p, i, b,
+textarea, button, input, select,
+figure, figcaption {
+	box-sizing:border-box;
+	padding: 0; border: none; margin: 0;
+  font-family:'微软雅黑', 'Microsoft Yahei';
+  font-size: 14px;
+	text-decoration: none;
+	list-style: none;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-font-smoothing:antialiased;
+	&:hover{ outline: none; }
+}
+textarea,
+input[type='button'],
+input[type='submit'],
+input[type='search'],
+input[type='reset'] { -webkit-appearance: none; }
+img {
+	width: 100%; height: auto;
+	vertical-align: middle;
+}
+.hide{ display: none; }
+.show{ display: block; }
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
