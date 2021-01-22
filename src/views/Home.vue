@@ -17,9 +17,6 @@ export default {
     Foot,
     Header,
     Section
-  },
-  methods: {
-    
   }
 }
 </script>
